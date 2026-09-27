@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policies - k-Tech Innovation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #090D16;
+      --card-bg: rgba(18, 24, 38, 0.7);
+      --card-hover: rgba(26, 34, 52, 0.9);
+      --border: rgba(255, 255, 255, 0.08);
+      --border-hover: rgba(99, 102, 241, 0.4);
+      --primary: #6366F1;
+      --primary-gradient: linear-gradient(135deg, #6366F1 0%, #A855F7 100%);
+      --accent: #10B981;
+      --text: #F8FAFC;
+      --text-muted: #94A3B8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg);
+      background-image: 
+        radial-gradient(circle at 15% 15%, rgba(99, 102, 241, 0.12) 0%, transparent 40%),
+        radial-gradient(circle at 85% 85%, rgba(168, 85, 247, 0.1) 0%, transparent 40%);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      padding: 60px 20px;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: rgba(99, 102, 241, 0.15);
+      border: 1px solid rgba(99, 102, 241, 0.3);
+      color: #A5B4FC;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 16px;
+      letter-spacing: 0.5px;
+    }
+    h1 {
+      font-size: 42px;
+      font-weight: 800;
+      background: var(--primary-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 12px;
+      letter-spacing: -1px;
+    }
+    header p {
+      color: var(--text-muted);
+      font-size: 17px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .apps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      margin-bottom: 60px;
+    }
+    .app-card {
+      background: var(--card-bg);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 24px;
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.25s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .app-card:hover {
+      background: var(--card-hover);
+      border-color: var(--border-hover);
+      transform: translateY(-3px);
+      box-shadow: 0 16px 32px rgba(0, 0, 0, 0.4);
+    }
+    .card-top {
+      margin-bottom: 16px;
+    }
+    .app-tag {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      padding: 3px 8px;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+    .tag-finance { background: rgba(16, 185, 129, 0.15); color: #34D399; }
+    .tag-security { background: rgba(59, 130, 246, 0.15); color: #60A5FA; }
+    .tag-utility { background: rgba(168, 85, 247, 0.15); color: #C084FC; }
+    .tag-lifestyle { background: rgba(245, 158, 11, 0.15); color: #FBBF24; }
+    .app-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 6px;
+    }
+    .app-pkg {
+      font-family: monospace;
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+    .app-desc {
+      font-size: 14px;
+      color: #CBD5E1;
+      line-height: 1.5;
+    }
+    .card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid var(--border);
+      padding-top: 14px;
+      margin-top: 14px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #818CF8;
+    }
+    .app-card:hover .card-footer {
+      color: #A5B4FC;
+    }
+    footer {
+      text-align: center;
+      padding-top: 30px;
+      border-top: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+    footer a { color: #818CF8; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="badge">Official Legal Compliance & Privacy Disclosures</div>
+      <h1>k-Tech Innovation</h1>
+      <p>Transparent, user-first privacy policies for all Android mobile applications published by k-Tech Innovation.</p>
+    </header>
+
+    <div class="apps-grid">
+      <!-- Expense Manager -->
+      <a href="/expense-manager.html" class="app-card">
+        <div class="card-top">
+          <span class="app-tag tag-finance">Finance</span>
+          <div class="app-title">ExpenseFlow (Expense Manager)</div>
+          <div class="app-pkg">com.Ledgely.app</div>
+          <div class="app-desc">100% offline, privacy-first expense, budget, and personal finance tracker with zero telemetry.</div>
+        </div>
+        <div class="card-footer">
+          <span>Read Privacy Policy</span>
+          <span>&rarr;</span>
+        </div>
+      </a>
+
+      <!-- DailyBite -->
+      <a href="/dailybite.html" class="app-card">
+        <div class="card-top">
+          <span class="app-tag tag-lifestyle">Lifestyle</span>
+          <div class="app-title">DailyBite</div>
+          <div class="app-pkg">com.dailybite.app</div>
+          <div class="app-desc">Smart meal and nutrition logger focused on private, local wellness tracking without cloud tracking.</div>
+        </div>
+        <div class="card-footer">
+          <span>Read Privacy Policy</span>
+          <span>&rarr;</span>
+        </div>
+      </a>
+
+      <!-- Quick Dice -->
+      <a href="/quick-dice.html" class="app-card">
+        <div class="card-top">
+          <span class="app-tag tag-utility">Utility</span>
+          <div class="app-title">Quick Dice</div>
+          <div class="app-pkg">com.quickdice.app</div>
+          <div class="app-desc">Minimalist, lightning-fast 3D & 2D dice roller with local roll history and zero tracking.</div>
+        </div>
+        <div class="card-footer">
+          <span>Read Privacy Policy</span>
+          <span>&rarr;</span>
+        </div>
+      </a>
+
+      <!-- Identity Vault -->
+      <a href="/identity-vault.html" class="app-card">
+        <div class="card-top">
+          <span class="app-tag tag-security">Security</span>
+          <div class="app-title">Identity Vault</div>
+          <div class="app-pkg">com.identityvault.app</div>
+          <div class="app-desc">Hardware-backed biometric vault protecting personal cards, documents, and credentials locally.</div>
+        </div>
+        <div class="card-footer">
+          <span>Read Privacy Policy</span>
+          <span>&rarr;</span>
+        </div>
+      </a>
+
+      <!-- FolioPulse -->
+      <a href="/portfolio-tracker.html" class="app-card">
+        <div class="card-top">
+          <span class="app-tag tag-finance">Finance</span>
+          <div class="app-title">FolioPulse (Portfolio Tracker)</div>
+          <div class="app-pkg">com.karthikeyan.foliopulse</div>
+          <div class="app-desc">Personal wealth & investment valuation tracking with private encrypted device storage.</div>
+        </div>
+        <div class="card-footer">
+          <span>Read Privacy Policy</span>
+          <span>&rarr;</span>
+        </div>
+      </a>
+
+      <!-- Simple Notes -->
+      <a href="/simple-notes.html" class="app-card">
+        <div class="card-top">
+          <span class="app-tag tag-utility">Productivity</span>
+          <div class="app-title">Simple Notes</div>
+          <div class="app-pkg">com.karthikeyan.simplenotes</div>
+          <div class="app-desc">Distraction-free note-taking engine with offline SQLite encryption and instant search.</div>
+        </div>
+        <div class="card-footer">
+          <span>Read Privacy Policy</span>
+          <span>&rarr;</span>
+        </div>
+      </a>
+
+      <!-- Smart Storage Cleaner -->
+      <a href="/smart-storage-cleaner.html" class="app-card">
+        <div class="card-top">
+          <span class="app-tag tag-utility">Tools</span>
+          <div class="app-title">Smart Storage Cleaner</div>
+          <div class="app-pkg">com.karthikeyan.smartstoragecleaner</div>
+          <div class="app-desc">On-device storage analyzer identifying duplicate photos, cache, and space wasters locally.</div>
+        </div>
+        <div class="card-footer">
+          <span>Read Privacy Policy</span>
+          <span>&rarr;</span>
+        </div>
+      </a>
+
+      <!-- VaultGuard -->
+      <a href="/vault-guard.html" class="app-card">
+        <div class="card-top">
+          <span class="app-tag tag-security">Security</span>
+          <div class="app-title">VaultGuard</div>
+          <div class="app-pkg">com.vaultguard.app</div>
+          <div class="app-desc">Zero-knowledge offline credentials manager protected by device biometrics.</div>
+        </div>
+        <div class="card-footer">
+          <span>Read Privacy Policy</span>
+          <span>&rarr;</span>
+        </div>
+      </a>
+
+      <!-- WeatherApp -->
+      <a href="/weather-app.html" class="app-card">
+        <div class="card-top">
+          <span class="app-tag tag-utility">Weather</span>
+          <div class="app-title">WeatherApp</div>
+          <div class="app-pkg">com.yourname.weatherapp</div>
+          <div class="app-desc">Precise atmospheric forecast engine with privacy-conscious location lookups.</div>
+        </div>
+        <div class="card-footer">
+          <span>Read Privacy Policy</span>
+          <span>&rarr;</span>
+        </div>
+      </a>
+    </div>
+
+    <footer>
+      &copy; 2026 k-Tech Innovation. All rights reserved. &bull; Compliant with Google Play Developer Program Policies.
+    </footer>
+  </div>
+</body>
+</html>

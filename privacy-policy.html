@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - ExpenseFlow</title>
+  <style>
+    :root {
+      --primary: #4F46E5;
+      --bg: #090D16;
+      --card: #121826;
+      --border: #1E293B;
+      --text: #F8FAFC;
+      --text-muted: #94A3B8;
+      --accent: #10B981;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 40px 32px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 999px;
+      background: rgba(16, 185, 129, 0.15);
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: 800;
+      color: #FFFFFF;
+      margin-bottom: 8px;
+      letter-spacing: -0.5px;
+    }
+    .date {
+      color: var(--text-muted);
+      font-size: 14px;
+      margin-bottom: 30px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 16px;
+    }
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #E2E8F0;
+      margin-top: 32px;
+      margin-bottom: 12px;
+    }
+    p, ul {
+      color: #CBD5E1;
+      font-size: 15px;
+      margin-bottom: 16px;
+    }
+    ul { padding-left: 24px; }
+    li { margin-bottom: 8px; }
+    .highlight-card {
+      background: rgba(79, 70, 229, 0.08);
+      border: 1px solid rgba(99, 102, 241, 0.3);
+      border-radius: 14px;
+      padding: 20px;
+      margin: 24px 0;
+    }
+    .highlight-card h3 {
+      color: #A5B4FC;
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 14px;
+    }
+    th, td {
+      border: 1px solid var(--border);
+      padding: 12px;
+      text-align: left;
+    }
+    th {
+      background: rgba(255,255,255,0.04);
+      color: #FFFFFF;
+    }
+    footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 13px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <span class="badge">100% Offline & Ad-Free</span>
+    <h1>Privacy Policy</h1>
+    <div class="date">Effective Date: September 20, 2026 · ExpenseFlow (Expense Manager)</div>
+
+    <div class="highlight-card">
+      <h3>Key Commitment to Your Privacy</h3>
+      <p>ExpenseFlow does <strong>NOT</strong> collect, upload, share, or sell any of your financial or personal information. The app is completely <strong>Ad-Free</strong>, runs <strong>100% Offline</strong>, and stores all data exclusively on your device in an isolated local SQLite database.</p>
+    </div>
+
+    <h2>1. Zero Remote Data Collection</h2>
+    <p>ExpenseFlow does not transmit your records to any remote server or third-party service. You do not need to register an account, log in with an email address, or provide banking credentials to access all features of the application.</p>
+
+    <h2>2. Local Information Processing</h2>
+    <p>All data entered into the app remains strictly on your device:</p>
+    <ul>
+      <li><strong>Transactions:</strong> Amounts, dates, categories, notes, and types (expense/income).</li>
+      <li><strong>Budgets & Limits:</strong> Monthly category-wise and overall limit parameters.</li>
+      <li><strong>Subscriptions:</strong> Service names, billing frequencies, and cycle dates.</li>
+      <li><strong>Investment Portfolio:</strong> Asset names, invested values, and current valuations.</li>
+      <li><strong>App Preferences:</strong> Selected currency (e.g. INR, USD, EUR) and visual theme (System, Light, Dark).</li>
+    </ul>
+
+    <h2>3. Device Permissions & Purpose</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Permission</th>
+          <th>Usage & Purpose</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>POST_NOTIFICATIONS</strong></td>
+          <td>Delivers scheduled local device reminders for bill renewals and budget warnings. No remote push notifications are used.</td>
+        </tr>
+        <tr>
+          <td><strong>USE_BIOMETRIC / FINGERPRINT</strong></td>
+          <td>Facilitates biometric PIN/Fingerprint unlocking via Android BiometricPrompt hardware enclave. Raw biometric data is never accessed or stored.</td>
+        </tr>
+        <tr>
+          <td><strong>STORAGE PERMISSIONS</strong></td>
+          <td>Used exclusively when you explicitly export transactions to CSV or choose a local backup file.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>4. Advertising & Tracking Declarations</h2>
+    <p>We declare that ExpenseFlow contains:</p>
+    <ul>
+      <li><strong>NO Advertisements:</strong> Zero banner ads, video ads, or interstitial advertisements.</li>
+      <li><strong>NO Analytics SDKs:</strong> Zero tracking frameworks, third-party analytics libraries, or advertising identifiers.</li>
+      <li><strong>NO Data Monetization:</strong> We never harvest, aggregate, or sell your financial habits.</li>
+    </ul>
+
+    <h2>5. Data Control & Deletion</h2>
+    <p>You maintain full ownership of your data at all times. You can export your data as CSV files or completely delete all transactions and categories directly from the Settings screen. Uninstalling the application completely erases all local database records from your device.</p>
+
+    <h2>6. Contact Us</h2>
+    <p>If you have any questions or feedback regarding this Privacy Policy, please contact the developer at <strong>support@expenseflow.local</strong>.</p>
+
+    <footer>
+      &copy; 2026 ExpenseFlow. All rights reserved. Built with privacy and offline reliability.
+    </footer>
+  </div>
+</body>
+</html>
