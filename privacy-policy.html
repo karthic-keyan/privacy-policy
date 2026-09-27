@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy - ExpenseFlow</title>
+  <title>Privacy Policy - Ledgely (Expense Manager)</title>
   <style>
     :root {
       --primary: #4F46E5;
@@ -13,6 +13,7 @@
       --text: #F8FAFC;
       --text-muted: #94A3B8;
       --accent: #10B981;
+      --accent-cyan: #06B6D4;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -23,7 +24,7 @@
       padding: 40px 20px;
     }
     .container {
-      max-width: 800px;
+      max-width: 820px;
       margin: 0 auto;
       background: var(--card);
       border: 1px solid var(--border);
@@ -31,6 +32,15 @@
       padding: 40px 32px;
       box-shadow: 0 20px 40px rgba(0,0,0,0.4);
     }
+    .back-nav {
+      display: inline-block;
+      margin-bottom: 24px;
+      color: #818CF8;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+    }
+    .back-nav:hover { text-decoration: underline; }
     .badge {
       display: inline-block;
       padding: 4px 12px;
@@ -53,9 +63,40 @@
     .date {
       color: var(--text-muted);
       font-size: 14px;
-      margin-bottom: 30px;
+      margin-bottom: 24px;
       border-bottom: 1px solid var(--border);
       padding-bottom: 16px;
+    }
+    .identity-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0 28px 0;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      font-size: 14px;
+    }
+    .identity-table th, .identity-table td {
+      border: 1px solid var(--border);
+      padding: 12px 16px;
+      text-align: left;
+    }
+    .identity-table th {
+      background: rgba(79, 70, 229, 0.12);
+      color: #E2E8F0;
+      width: 32%;
+      font-weight: 600;
+    }
+    .identity-table td {
+      background: rgba(255, 255, 255, 0.02);
+      color: #F8FAFC;
+    }
+    .identity-table td code {
+      background: rgba(99, 102, 241, 0.15);
+      color: #A5B4FC;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: monospace;
     }
     h2 {
       font-size: 20px;
@@ -63,6 +104,8 @@
       color: #E2E8F0;
       margin-top: 32px;
       margin-bottom: 12px;
+      border-left: 3px solid var(--accent);
+      padding-left: 10px;
     }
     p, ul {
       color: #CBD5E1;
@@ -83,20 +126,30 @@
       font-size: 16px;
       margin-bottom: 8px;
     }
-    table {
+    table.data-table {
       width: 100%;
       border-collapse: collapse;
       margin: 20px 0;
       font-size: 14px;
     }
-    th, td {
+    table.data-table th, table.data-table td {
       border: 1px solid var(--border);
       padding: 12px;
       text-align: left;
     }
-    th {
-      background: rgba(255,255,255,0.04);
+    table.data-table th {
+      background: rgba(255,255,255,0.06);
       color: #FFFFFF;
+    }
+    table.data-table td {
+      color: #CBD5E1;
+    }
+    a {
+      color: #818CF8;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
     }
     footer {
       margin-top: 40px;
@@ -105,35 +158,77 @@
       color: var(--text-muted);
       font-size: 13px;
       text-align: center;
+      line-height: 1.6;
     }
   </style>
 </head>
 <body>
   <div class="container">
+    <a href="/" class="back-nav">&larr; Back to all policies</a>
     <span class="badge">100% Offline & Ad-Free</span>
     <h1>Privacy Policy</h1>
-    <div class="date">Effective Date: September 20, 2026 · ExpenseFlow (Expense Manager)</div>
+    <div class="date">Effective Date: September 27, 2026 &bull; <strong>Ledgely</strong> (<code>com.Ledgely.app</code>) &bull; Published by <strong>k-Tech Innovation</strong></div>
+
+    <!-- Google Play Store Listing & Entity Identifiers Table -->
+    <table class="identity-table">
+      <tr>
+        <th>Application Name</th>
+        <td><strong>Ledgely</strong> (also listed & known as <em>Expense Manager</em> / <em>Ledgely - Expense Manager</em>)</td>
+      </tr>
+      <tr>
+        <th>Package Name (App ID)</th>
+        <td><code>com.Ledgely.app</code></td>
+      </tr>
+      <tr>
+        <th>Developer / Entity</th>
+        <td><strong>k-Tech Innovation</strong> (KTech Innovation / Karthikeyan)</td>
+      </tr>
+      <tr>
+        <th>Google Play Store Listing</th>
+        <td><a href="https://play.google.com/store/apps/details?id=com.Ledgely.app" target="_blank" rel="noopener">Ledgely on Google Play</a></td>
+      </tr>
+      <tr>
+        <th>Play Store Contact Email</th>
+        <td><a href="mailto:ktechinnovationltd@gmail.com">ktechinnovationltd@gmail.com</a></td>
+      </tr>
+      <tr>
+        <th>Developer Support Email</th>
+        <td><a href="mailto:karthik.devacc@gmail.com">karthik.devacc@gmail.com</a> / <a href="mailto:support@ktechinnovation.com">support@ktechinnovation.com</a></td>
+      </tr>
+      <tr>
+        <th>Developer Organization</th>
+        <td><a href="https://github.com/k-Tech-innovation" target="_blank" rel="noopener">https://github.com/k-Tech-innovation</a></td>
+      </tr>
+    </table>
 
     <div class="highlight-card">
       <h3>Key Commitment to Your Privacy</h3>
-      <p>ExpenseFlow does <strong>NOT</strong> collect, upload, share, or sell any of your financial or personal information. The app is completely <strong>Ad-Free</strong>, runs <strong>100% Offline</strong>, and stores all data exclusively on your device in an isolated local SQLite database.</p>
+      <p><strong>Ledgely</strong> does <strong>NOT</strong> collect, upload, transmit, share, or sell any of your financial or personal information. The app is completely <strong>Ad-Free</strong>, operates <strong>100% Offline</strong>, and stores all records exclusively on your device in an isolated, private SQLite database.</p>
     </div>
 
-    <h2>1. Zero Remote Data Collection</h2>
-    <p>ExpenseFlow does not transmit your records to any remote server or third-party service. You do not need to register an account, log in with an email address, or provide banking credentials to access all features of the application.</p>
+    <h2>1. Scope & Application Details</h2>
+    <p>This Privacy Policy explicitly governs the mobile application <strong>Ledgely</strong> (Package Name: <code>com.Ledgely.app</code>, also referenced as <em>Expense Manager</em>), published on the Google Play Store by <strong>k-Tech Innovation</strong>. We believe that your personal financial records belong strictly to you and should never be accessible to third parties, advertisers, or cloud servers.</p>
 
-    <h2>2. Local Information Processing</h2>
-    <p>All data entered into the app remains strictly on your device:</p>
+    <h2>2. Zero Remote Data Collection</h2>
+    <p>Ledgely does not transmit your records to any remote server or third-party service. You do not need to register an account, log in with an email address, or provide banking credentials to access any feature of the application.</p>
     <ul>
-      <li><strong>Transactions:</strong> Amounts, dates, categories, notes, and types (expense/income).</li>
-      <li><strong>Budgets & Limits:</strong> Monthly category-wise and overall limit parameters.</li>
-      <li><strong>Subscriptions:</strong> Service names, billing frequencies, and cycle dates.</li>
-      <li><strong>Investment Portfolio:</strong> Asset names, invested values, and current valuations.</li>
-      <li><strong>App Preferences:</strong> Selected currency (e.g. INR, USD, EUR) and visual theme (System, Light, Dark).</li>
+      <li><strong>No Cloud Servers:</strong> We operate zero external databases or cloud sync services for this app.</li>
+      <li><strong>No Account Creation:</strong> No sign-in, authentication, or personal profile creation is required.</li>
+      <li><strong>No Financial Aggregation:</strong> The app never connects to banks, credit bureaus, or financial institutions.</li>
     </ul>
 
-    <h2>3. Device Permissions & Purpose</h2>
-    <table>
+    <h2>3. Information Handled Exclusively On Your Local Device</h2>
+    <p>All data entered into the app remains strictly on your local physical device:</p>
+    <ul>
+      <li><strong>Transactions:</strong> Amounts, dates, custom categories, transaction types (expense/income), and payment notes.</li>
+      <li><strong>Budgets & Limits:</strong> Monthly category-wise spending limits and budget threshold preferences.</li>
+      <li><strong>Subscriptions & Bills:</strong> Service names, recurring frequencies, due dates, and billing amounts.</li>
+      <li><strong>Investment Portfolio:</strong> Asset names (stocks, mutual funds, gold, crypto, real estate), invested values, and current manual valuations.</li>
+      <li><strong>App Preferences:</strong> Selected currency symbol/code (USD, EUR, GBP, INR, JPY, etc.) and visual theme mode (System Default, Light, Dark).</li>
+    </ul>
+
+    <h2>4. Device Permissions & Purpose</h2>
+    <table class="data-table">
       <thead>
         <tr>
           <th>Permission</th>
@@ -143,35 +238,55 @@
       <tbody>
         <tr>
           <td><strong>POST_NOTIFICATIONS</strong></td>
-          <td>Delivers scheduled local device reminders for bill renewals and budget warnings. No remote push notifications are used.</td>
+          <td>Used exclusively on Android 13+ to deliver scheduled local device reminders for bill renewals and monthly budget thresholds. No remote push notifications or marketing alerts are ever used.</td>
         </tr>
         <tr>
-          <td><strong>USE_BIOMETRIC / FINGERPRINT</strong></td>
-          <td>Facilitates biometric PIN/Fingerprint unlocking via Android BiometricPrompt hardware enclave. Raw biometric data is never accessed or stored.</td>
+          <td><strong>USE_BIOMETRIC / USE_FINGERPRINT</strong></td>
+          <td>Facilitates biometric PIN/Fingerprint unlocking via the Android <code>BiometricPrompt</code> hardware enclave. Raw biometric information is handled strictly by the OS and is never accessed or stored by the app.</td>
         </tr>
         <tr>
-          <td><strong>STORAGE PERMISSIONS</strong></td>
-          <td>Used exclusively when you explicitly export transactions to CSV or choose a local backup file.</td>
+          <td><strong>STORAGE ACCESS</strong></td>
+          <td>Used exclusively when you explicitly export transactions to CSV/JSON files or import a local backup file that you manually select.</td>
         </tr>
       </tbody>
     </table>
 
-    <h2>4. Advertising & Tracking Declarations</h2>
-    <p>We declare that ExpenseFlow contains:</p>
+    <h2>5. Advertising, Analytics & Tracking Declarations</h2>
+    <p>We declare that Ledgely contains:</p>
     <ul>
-      <li><strong>NO Advertisements:</strong> Zero banner ads, video ads, or interstitial advertisements.</li>
-      <li><strong>NO Analytics SDKs:</strong> Zero tracking frameworks, third-party analytics libraries, or advertising identifiers.</li>
-      <li><strong>NO Data Monetization:</strong> We never harvest, aggregate, or sell your financial habits.</li>
+      <li><strong>NO Advertisements:</strong> Zero banner ads, zero interstitial ads, zero video rewards, and no ad network SDKs.</li>
+      <li><strong>NO Analytics SDKs:</strong> Zero tracking frameworks, third-party analytics libraries, or advertising identifiers (no Google AdMob, Firebase Analytics, or Facebook SDK).</li>
+      <li><strong>NO Data Monetization:</strong> We never harvest, aggregate, sell, or license your financial records or usage habits to data brokers.</li>
     </ul>
 
-    <h2>5. Data Control & Deletion</h2>
-    <p>You maintain full ownership of your data at all times. You can export your data as CSV files or completely delete all transactions and categories directly from the Settings screen. Uninstalling the application completely erases all local database records from your device.</p>
+    <h2>6. Data Control, Retention & Deletion Rights</h2>
+    <p>You maintain full ownership and control of your data at all times:</p>
+    <ul>
+      <li><strong>In-App Deletion:</strong> You can edit or permanently delete individual transactions, categories, budgets, and subscriptions directly within the app.</li>
+      <li><strong>Data Export:</strong> You can export your full transaction records to CSV format at any time from Settings &gt; Data Management.</li>
+      <li><strong>Complete Erasure:</strong> Clearing the application's storage in your device settings (<strong>Settings &gt; Apps &gt; Ledgely &gt; Storage &gt; Clear Storage/Data</strong>) or uninstalling the app permanently erases all local database records from your device immediately.</li>
+    </ul>
 
-    <h2>6. Contact Us</h2>
-    <p>If you have any questions or feedback regarding this Privacy Policy, please contact the developer at <strong>support@expenseflow.local</strong>.</p>
+    <h2>7. Children's Privacy</h2>
+    <p>Ledgely does not collect personal information from any user, including children under the age of 13 (or under 16 in the EEA). The application complies fully with COPPA, GDPR, and Google Play Families Policy guidelines.</p>
+
+    <h2>8. Google Play Policy Compliance</h2>
+    <p>Ledgely complies fully with Google Play Developer Program Policies, specifically the User Data Policy and Financial Services policy. We declare that Ledgely does not collect, handle, or transmit Personal and Sensitive User Data to external endpoints.</p>
+
+    <h2>9. Contact Information</h2>
+    <p>If you have any questions, feedback, or require clarification regarding this Privacy Policy or your data privacy while using Ledgely, please contact the developer and publishing entity:</p>
+    <ul>
+      <li><strong>Developer / Entity:</strong> k-Tech Innovation (KTech Innovation)</li>
+      <li><strong>Lead Developer:</strong> Karthikeyan</li>
+      <li><strong>Google Play Contact Email:</strong> <a href="mailto:ktechinnovationltd@gmail.com">ktechinnovationltd@gmail.com</a></li>
+      <li><strong>Support Email:</strong> <a href="mailto:karthik.devacc@gmail.com">karthik.devacc@gmail.com</a> / <a href="mailto:support@ktechinnovation.com">support@ktechinnovation.com</a></li>
+      <li><strong>Organization URL:</strong> <a href="https://github.com/k-Tech-innovation" target="_blank" rel="noopener">https://github.com/k-Tech-innovation</a></li>
+      <li><strong>Application Repository:</strong> <a href="https://github.com/k-Tech-innovation/expense-manager" target="_blank" rel="noopener">https://github.com/k-Tech-innovation/expense-manager</a></li>
+    </ul>
 
     <footer>
-      &copy; 2026 ExpenseFlow. All rights reserved. Built with privacy and offline reliability.
+      &copy; 2026 <strong>k-Tech Innovation</strong>. All rights reserved.<br>
+      Published for <strong>Ledgely</strong> (<code>com.Ledgely.app</code>) on Google Play.
     </footer>
   </div>
 </body>
