@@ -1,0 +1,114 @@
+﻿{
+  "version": 1,
+  "lastUpdated": "2026-10-01",
+  "apps": {
+    "com.dailybite.app": {
+      "appName": "DailyBite",
+      "latestVersion": "2.1.3",
+      "latestVersionCode": 8,
+      "minVersion": "1.0.0",
+      "minVersionCode": 1,
+      "forceUpdate": false,
+      "title": "DailyBite Update Available",
+      "message": "A new version of DailyBite is available on Google Play. Update now for the latest meal tracking features, UI improvements, and bug fixes!",
+      "releaseNotes": "• Performance improvements and bug fixes\n• Enhanced nutrition tracking and meal logging",
+      "storeUrl": "https://play.google.com/store/apps/details?id=com.dailybite.app"
+    },
+    "com.quickdice.app": {
+      "appName": "Quick Dice",
+      "latestVersion": "1.1.0",
+      "latestVersionCode": 1,
+      "minVersion": "1.0.0",
+      "minVersionCode": 1,
+      "forceUpdate": false,
+      "title": "Quick Dice Update Available",
+      "message": "A new version of Quick Dice is available on Google Play with improved animations and physics!",
+      "releaseNotes": "• Smooth rolling animations and haptic feedback\n• Stability and performance enhancements",
+      "storeUrl": "https://play.google.com/store/apps/details?id=com.quickdice.app"
+    },
+    "com.Ledgely.app": {
+      "appName": "Ledgely",
+      "latestVersion": "1.0.4",
+      "latestVersionCode": 5,
+      "minVersion": "1.0.0",
+      "minVersionCode": 1,
+      "forceUpdate": false,
+      "title": "Ledgely Update Available",
+      "message": "A new version of Ledgely Expense Manager is available. Update now to enjoy improved budgeting tools, charts, and fixes.",
+      "releaseNotes": "• Budget management updates and visual spending analytics\n• Offline data stability enhancements",
+      "storeUrl": "https://play.google.com/store/apps/details?id=com.Ledgely.app"
+    },
+    "com.identityvault.app": {
+      "appName": "Identity Vault",
+      "latestVersion": "1.0.0",
+      "latestVersionCode": 1,
+      "minVersion": "1.0.0",
+      "minVersionCode": 1,
+      "forceUpdate": false,
+      "title": "Identity Vault Update Available",
+      "message": "A new version of Identity Vault is available with enhanced encryption security and features.",
+      "releaseNotes": "• Encrypted identity document protection\n• Performance optimizations",
+      "storeUrl": "https://play.google.com/store/apps/details?id=com.identityvault.app"
+    },
+    "com.karthikeyan.foliopulse": {
+      "appName": "FolioPulse",
+      "latestVersion": "1.0.0",
+      "latestVersionCode": 1,
+      "minVersion": "1.0.0",
+      "minVersionCode": 1,
+      "forceUpdate": false,
+      "title": "FolioPulse Update Available",
+      "message": "A new version of FolioPulse Portfolio Tracker is available. Update now for real-time asset insights and calculations.",
+      "releaseNotes": "• Portfolio tracking & analytics improvements\n• Bug fixes and UI refinements",
+      "storeUrl": "https://play.google.com/store/apps/details?id=com.karthikeyan.foliopulse"
+    },
+    "com.karthikeyan.simplenotes": {
+      "appName": "Simple Notes",
+      "latestVersion": "1.0.0",
+      "latestVersionCode": 1,
+      "minVersion": "1.0.0",
+      "minVersionCode": 1,
+      "forceUpdate": false,
+      "title": "Simple Notes Update Available",
+      "message": "A new version of Simple Notes is ready. Update now to get the latest note-taking features and tag improvements.",
+      "releaseNotes": "• Markdown and tagging enhancements\n• Fast search and offline reliability fixes",
+      "storeUrl": "https://play.google.com/store/apps/details?id=com.karthikeyan.simplenotes"
+    },
+    "com.karthikeyan.smartstoragecleaner": {
+      "appName": "Smart Storage Cleaner",
+      "latestVersion": "1.0.0",
+      "latestVersionCode": 1,
+      "minVersion": "1.0.0",
+      "minVersionCode": 1,
+      "forceUpdate": false,
+      "title": "Smart Storage Cleaner Update Available",
+      "message": "A new version of Smart Storage Cleaner is available. Update now to scan and clean storage faster.",
+      "releaseNotes": "• Storage scanning algorithm improvements\n• Duplicate file detection accuracy updates",
+      "storeUrl": "https://play.google.com/store/apps/details?id=com.karthikeyan.smartstoragecleaner"
+    },
+    "com.vaultguard.app": {
+      "appName": "VaultGuard",
+      "latestVersion": "1.0.0",
+      "latestVersionCode": 1,
+      "minVersion": "1.0.0",
+      "minVersionCode": 1,
+      "forceUpdate": false,
+      "title": "VaultGuard Update Available",
+      "message": "A new update for VaultGuard is available on Google Play with security enhancements.",
+      "releaseNotes": "• Biometric lock stability improvements\n• Encrypted local store security updates",
+      "storeUrl": "https://play.google.com/store/apps/details?id=com.vaultguard.app"
+    },
+    "com.yourname.weatherapp": {
+      "appName": "Weather App",
+      "latestVersion": "1.3.2",
+      "latestVersionCode": 15,
+      "minVersion": "1.0.0",
+      "minVersionCode": 1,
+      "forceUpdate": false,
+      "title": "Weather App Update Available",
+      "message": "A new version of Weather App is available on Google Play. Update now for accurate forecasts and new radar charts!",
+      "releaseNotes": "• Improved live forecast data and hourly updates\n• Bug fixes and battery optimizations",
+      "storeUrl": "https://play.google.com/store/apps/details?id=com.yourname.weatherapp"
+    }
+  }
+}
