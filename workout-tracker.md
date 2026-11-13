@@ -3,9 +3,9 @@
 **Last Updated:** November 13, 2026  
 **Effective Date:** November 13, 2026  
 **Application Name:** IronLog: Workout Tracker (IronLog)  
-**Package Name / Application ID:** `com.ironlog.app`  
+**Package Name / Application ID:** `com.ironlogtracker.app`  
 **Developer / Publisher:** k-Tech Innovation (KTech Innovation / Karthikeyan)  
-**Google Play Store Listing:** [IronLog on Google Play Store](https://play.google.com/store/apps/details?id=com.ironlog.app)  
+**Google Play Store Listing:** [IronLog on Google Play Store](https://play.google.com/store/apps/details?id=com.ironlogtracker.app)  
 **Hosted Privacy Policy URL:** [https://karthic-keyan.github.io/privacy-policy/ironlog.html](https://karthic-keyan.github.io/privacy-policy/ironlog.html)  
 **Contact Email:** ktechinnovationltd@gmail.com / karthik.devacc@gmail.com  
 **Developer Organization:** [https://github.com/k-Tech-innovation](https://github.com/k-Tech-innovation)  
@@ -14,7 +14,7 @@
 
 ## 1. Introduction & Overview
 
-Welcome to **IronLog: Workout Tracker** ("IronLog", "we", "our", or "us"), developed and published by **k-Tech Innovation**. We take your personal privacy seriously. This Privacy Policy explains our practices regarding user data, device permissions, and security for the **IronLog** mobile application for Android (`com.ironlog.app`).
+Welcome to **IronLog: Workout Tracker** ("IronLog", "we", "our", or "us"), developed and published by **k-Tech Innovation**. We take your personal privacy seriously. This Privacy Policy explains our practices regarding user data, device permissions, and security for the **IronLog** mobile application for Android (`com.ironlogtracker.app`).
 
 IronLog is engineered from the ground up as a **100% offline, privacy-first, ad-free fitness utility**. We do not operate user accounts, we do not sync your personal workout logs to remote cloud databases, and we never collect, track, monetize, or transmit your personal information.
 
@@ -124,3 +124,4 @@ If you have questions, feedback, or need clarification regarding this Privacy Po
 * **Support Email:** `ktechinnovationltd@gmail.com`
 * **Developer Direct:** `karthik.devacc@gmail.com`
 * **GitHub Repository:** [https://github.com/k-Tech-innovation](https://github.com/k-Tech-innovation)
+
