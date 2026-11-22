@@ -110,12 +110,12 @@
       <li><strong>Master password:</strong> your vault key is protected by a key derived from your master password (PBKDF2-SHA256 with a random salt). The master password itself is never stored or transmitted.</li>
       <li><strong>We cannot recover your vault.</strong> Because we never have your master password or your data, a forgotten master password cannot be reset by us.</li>
       <li><strong>Fingerprint unlock (optional):</strong> if you turn it on, a protected copy of the vault key is kept in Android's secure storage (Android Keystore). Fingerprint checks are done by Android; the App never receives or stores your fingerprint.</li>
-      <li><strong>Auto-lock:</strong> the vault locks after the timeout you choose and, if enabled, when the App goes to the background. The decrypted key is kept only in memory while the vault is unlocked.</li>
+      <li><strong>Auto-lock:</strong> the vault locks when you tap Lock and, with Lock on Background turned on (the default), as soon as the App goes to the background. The decrypted key is kept only in memory while the vault is unlocked.</li>
       <li><strong>Password generator:</strong> passwords are generated on your device using the system's secure random number generator.</li>
     </ul>
 
     <h2>3. Clipboard</h2>
-    <p>When you tap copy, the value is placed on the Android clipboard so you can paste it into another app. The App clears the clipboard automatically 30 seconds later. While a value is on the clipboard, Android and the app you paste into (for example your keyboard) may be able to read it.</p>
+    <p>When you tap copy, the value is placed on the Android clipboard so you can paste it into another app. The App clears the clipboard automatically after the delay set in Settings &gt; Clear Clipboard (30 seconds by default; it can also be set to Never). While a value is on the clipboard, Android and the app you paste into (for example your keyboard) may be able to read it.</p>
 
     <h2>4. Information we do not collect</h2>
     <ul>
