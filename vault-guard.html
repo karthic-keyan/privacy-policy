@@ -85,7 +85,7 @@
     </div>
     <h1>Privacy Policy</h1>
     <div class="date">
-      Effective Date: November 22, 2026 &bull; VaultGuard: Password Manager (<span class="tag">com.vaultguard.com</span>) &bull; Published by k-Tech Innovation
+      Effective Date: November 24, 2026 &bull; VaultGuard: Password Manager (<span class="tag">com.vaultguard.com</span>) &bull; Published by k-Tech Innovation
     </div>
 
     <div class="highlight-card">
@@ -96,11 +96,19 @@
     <h2>1. Information you store in the App</h2>
     <p>You choose what to save. Depending on the item type, a vault item can contain:</p>
     <ul>
-      <li><strong>Passwords:</strong> title, username or email, password, website and notes.</li>
+      <li><strong>Passwords:</strong> title, username or email, password, website, an optional two-factor (authenticator) setup key, and notes.</li>
       <li><strong>Secure notes:</strong> the note text.</li>
-      <li><strong>Credit cards:</strong> card name, cardholder name, card number, expiry date, CVV, PIN, bank and notes.</li>
+      <li><strong>Payment cards:</strong> card name, cardholder name, card number, expiry date, CVV, PIN, bank and notes.</li>
       <li><strong>Identities:</strong> full name, date of birth, gender, email, phone number, address, ID document number and notes.</li>
+      <li><strong>Passports:</strong> full name, passport number, issuing country, nationality, date and place of birth, issue and expiry dates, issuing authority and notes.</li>
+      <li><strong>Visas:</strong> country, visa type, full name, visa number, passport number, validity dates, entries, length of stay, place of issue and notes.</li>
+      <li><strong>Driver's licenses:</strong> full name, license number, date of birth, vehicle classes, issue and expiry dates, issuing authority, country, address and notes.</li>
+      <li><strong>Insurance cards:</strong> insurer, insurance type, policy number, member ID, group number, policyholder, start and renewal dates, claims phone, website and notes.</li>
+      <li><strong>Medical records:</strong> patient name, record type, doctor or clinic, date, blood type, allergies, medications, conditions and notes. This can be health information; it is stored only on your device, encrypted, and is never sent anywhere.</li>
+      <li><strong>SSH keys:</strong> host, user name, private key, public key, passphrase, key type, fingerprint and notes.</li>
+      <li><strong>Software licenses:</strong> product, version, license key, licensed-to name, registered email, seller, order number, purchase and expiry dates, website and notes.</li>
       <li><strong>Folders</strong> you create to organise items.</li>
+      <li><strong>Attached files</strong> you choose to add to an item, such as a scan or PDF of a passport, visa or insurance card (up to 10 MB each). The App reads only the file you pick; it has no access to your other photos or files.</li>
     </ul>
     <p>All of this stays on your device. It is never sent to us or to anyone else.</p>
 
@@ -111,49 +119,72 @@
       <li><strong>We cannot recover your vault.</strong> Because we never have your master password or your data, a forgotten master password cannot be reset by us.</li>
       <li><strong>Fingerprint unlock (optional):</strong> if you turn it on, a protected copy of the vault key is kept in Android's secure storage (Android Keystore). Fingerprint checks are done by Android; the App never receives or stores your fingerprint.</li>
       <li><strong>Auto-lock:</strong> the vault locks when you tap Lock and, with Lock on Background turned on (the default), as soon as the App goes to the background. The decrypted key is kept only in memory while the vault is unlocked.</li>
+      <li><strong>Attachments:</strong> files are encrypted with AES-256-GCM before they are saved in the App's private storage. To show an image, it is decrypted in memory only. To open a file in another app (for example a PDF viewer) or to share it, the App writes a temporary decrypted copy to its private cache. Those copies are deleted when the vault locks and when the App starts.</li>
       <li><strong>Password generator:</strong> passwords are generated on your device using the system's secure random number generator.</li>
     </ul>
 
-    <h2>3. Clipboard</h2>
+    <h2>3. Autofill (optional, off by default)</h2>
+    <p>If you turn on Autofill (Settings &gt; Autofill) and choose VaultGuard as Android's autofill service:</p>
+    <ul>
+      <li>Only logins are made available: title, username, password, website and two-factor key. Cards, documents, notes and attachments are never used for autofill.</li>
+      <li>These logins are kept in a separate store in the App's private storage on your phone. Titles, usernames and websites are encrypted with a key held in the Android Keystore. Passwords and two-factor keys are encrypted with a second Keystore key that Android unlocks only right after your fingerprint, face or screen lock is confirmed.</li>
+      <li>To suggest logins, Android shows VaultGuard the fields of the login screen you are on and the web address or app name. This is used on your device only, to find matching logins, and is never stored or sent anywhere. The App remembers which login you picked for an app, so it can suggest it next time.</li>
+      <li>When a login with a two-factor key is filled, the current one-time code is copied to the clipboard so you can paste it (see section 4).</li>
+      <li>Turning Autofill off deletes this store and its keys.</li>
+    </ul>
+
+    <h2>4. Expiry reminders</h2>
+    <p>If an item has an expiry date (for example a passport, visa, license, card, insurance policy or software license), the App schedules local reminders on your phone, by default 30 days before and on the expiry date (passports also 6 months before). Reminders are created by the App itself. No server or push service is involved. The notification says only what kind of item is expiring (for example "A passport in your vault expires in 30 days"), never its title or number. You can turn reminders off in Settings.</p>
+
+    <h2>5. Encrypted backups and imports</h2>
+    <ul>
+      <li><strong>Backups:</strong> Settings &gt; Backup &amp; Restore creates an encrypted .vgbackup file with your items and attachments, which stay encrypted exactly as in the App. The file can only be opened with your master password. The App never uploads it. It opens Android's share sheet, and you decide where the file goes (for example a computer, a USB drive or your own cloud storage). Once it is saved there, that service's terms apply.</li>
+      <li><strong>Imports:</strong> Settings &gt; Import reads an export file from another password manager that you pick. The file is read on your phone only and each item is encrypted as it is saved. The App cannot delete the export file for you. Because it is not encrypted, you should delete it after importing.</li>
+    </ul>
+
+    <h2>6. Clipboard</h2>
     <p>When you tap copy, the value is placed on the Android clipboard so you can paste it into another app. The App clears the clipboard automatically after the delay set in Settings &gt; Clear Clipboard (30 seconds by default; it can also be set to Never). While a value is on the clipboard, Android and the app you paste into (for example your keyboard) may be able to read it.</p>
 
-    <h2>4. Information we do not collect</h2>
+    <h2>7. Information we do not collect</h2>
     <ul>
       <li>No account, sign-up, email address or phone number.</li>
       <li>No analytics, crash-reporting or advertising SDKs. The App shows no ads.</li>
-      <li>No location, contacts, photos or advertising ID.</li>
+      <li>No location, contacts or advertising ID. The App only reads files and photos you pick yourself.</li>
       <li>We never sell, share or look at your information.</li>
     </ul>
 
-    <h2>5. Internet use</h2>
-    <p>Your vault works fully offline. The App connects to the internet only for an <strong>update check</strong>: it downloads a small public version file from GitHub (karthic-keyan.github.io / raw.githubusercontent.com) and, if that fails, reads the App's public Google Play page. No vault data or personal information is sent. Like any web request, these servers can see your IP address. They are run by GitHub and Google, not by us. If you are offline, the check is skipped.</p>
+    <h2>8. Internet use</h2>
+    <p>Your vault, autofill, reminders, backups and imports all work fully offline. The App connects to the internet only for an <strong>update check</strong>: it downloads a small public version file from GitHub (karthic-keyan.github.io / raw.githubusercontent.com) and, if that fails, reads the App's public Google Play page. No vault data or personal information is sent. Like any web request, these servers can see your IP address. They are run by GitHub and Google, not by us. If you are offline, the check is skipped.</p>
 
-    <h2>6. Permissions</h2>
+    <h2>9. Permissions</h2>
     <div class="table-wrap">
       <table>
         <thead><tr><th>Permission</th><th>Why</th></tr></thead>
         <tbody>
           <tr><td><span class="tag">USE_BIOMETRIC</span></td><td>Optional fingerprint unlock of your vault.</td></tr>
-          <tr><td><span class="tag">INTERNET</span></td><td>The update check only (section 5).</td></tr>
+          <tr><td><span class="tag">INTERNET</span></td><td>The update check only (section 8).</td></tr>
+          <tr><td><span class="tag">POST_NOTIFICATIONS</span></td><td>Expiry reminders (section 4); asked for only when you have an item with an expiry date.</td></tr>
+          <tr><td><span class="tag">RECEIVE_BOOT_COMPLETED</span></td><td>Re-arms expiry reminders after the phone restarts.</td></tr>
+          <tr><td><span class="tag">BIND_AUTOFILL_SERVICE</span></td><td>Lets Android use VaultGuard for autofill, only if you choose it (section 3).</td></tr>
           <tr><td><span class="tag">VIBRATE</span></td><td>Haptic feedback on taps.</td></tr>
         </tbody>
       </table>
     </div>
 
-    <h2>7. Backups, retention and deletion</h2>
+    <h2>10. Retention and deletion</h2>
     <ul>
-      <li>Your data stays on your device until you delete it. You can delete individual items or folders inside the App.</li>
-      <li>Android's automatic cloud backup is turned off for the App, so your vault is never copied to Google Drive or any other cloud service.</li>
-      <li>Uninstalling the App, or clearing its storage in Android Settings (<em>Apps &gt; VaultGuard &gt; Storage &gt; Clear storage</em>), permanently deletes the vault and its keys. Because we hold no copy, this cannot be undone.</li>
+      <li>Your data stays on your device until you delete it. You can delete individual items, attachments or folders inside the App. Deleting an item also deletes its attachments.</li>
+      <li>Android's automatic cloud backup is turned off for the App, so your vault is never copied to Google Drive or any other cloud service unless you save a backup file there yourself.</li>
+      <li>Uninstalling the App, or clearing its storage in Android Settings, permanently deletes the vault, its attachments, the autofill store and their keys. Unless you made a backup file, this cannot be undone; we hold no copy.</li>
     </ul>
 
-    <h2>8. Children's privacy</h2>
+    <h2>11. Children's privacy</h2>
     <p>The App is not directed at children under 13 and does not knowingly collect personal information from anyone.</p>
 
-    <h2>9. Changes to this policy</h2>
-    <p>If this policy changes, the updated version will be posted at this address with a new effective date.</p>
+    <h2>12. Changes to this policy</h2>
+    <p>If this policy changes, the updated version will be posted at the same address with a new effective date.</p>
 
-    <h2>10. Contact</h2>
+    <h2>13. Contact</h2>
     <p>Questions about this policy? Contact k-Tech Innovation at <a href="mailto:ktechinnovationltd@gmail.com">ktechinnovationltd@gmail.com</a>.</p>
 
     <footer>
