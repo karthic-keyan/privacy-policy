@@ -3,16 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy - Simple Notes</title>
+  <title>Privacy Policy - Simple Notes Offline</title>
+  <meta name="description" content="Privacy policy for Simple Notes Offline, an offline, ad-free, encrypted notes and checklist app by ktechinnovation.">
   <style>
     :root {
-      --primary: #4F46E5;
-      --bg: #090D16;
+      --primary: #6366F1;
+      --bg: #0B0F19;
       --card: #121826;
-      --border: #1E293B;
+      --border: #232D42;
       --text: #F8FAFC;
       --text-muted: #94A3B8;
-      --accent: #10B981;
+      --accent: #A5B4FC;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -20,7 +21,7 @@
       background-color: var(--bg);
       color: var(--text);
       line-height: 1.65;
-      padding: 40px 20px;
+      padding: 40px 16px;
     }
     .container {
       max-width: 800px;
@@ -28,13 +29,13 @@
       background: var(--card);
       border: 1px solid var(--border);
       border-radius: 20px;
-      padding: 40px 32px;
+      padding: 40px 28px;
       box-shadow: 0 20px 40px rgba(0,0,0,0.4);
     }
     .back-nav {
       display: inline-block;
       margin-bottom: 24px;
-      color: #818CF8;
+      color: var(--accent);
       text-decoration: none;
       font-size: 14px;
       font-weight: 600;
@@ -44,7 +45,7 @@
       display: inline-block;
       padding: 4px 12px;
       border-radius: 999px;
-      background: rgba(16, 185, 129, 0.15);
+      background: rgba(99, 102, 241, 0.15);
       color: var(--accent);
       font-weight: 700;
       font-size: 12px;
@@ -52,13 +53,7 @@
       letter-spacing: 0.8px;
       margin-bottom: 12px;
     }
-    h1 {
-      font-size: 32px;
-      font-weight: 800;
-      color: #FFFFFF;
-      margin-bottom: 8px;
-      letter-spacing: -0.5px;
-    }
+    h1 { font-size: 32px; font-weight: 800; color: #FFFFFF; margin-bottom: 8px; letter-spacing: -0.5px; }
     .date {
       color: var(--text-muted);
       font-size: 14px;
@@ -66,47 +61,25 @@
       border-bottom: 1px solid var(--border);
       padding-bottom: 16px;
     }
-    h2 {
-      font-size: 20px;
-      font-weight: 700;
-      color: #E2E8F0;
-      margin-top: 32px;
-      margin-bottom: 12px;
-    }
-    p, ul {
-      color: #CBD5E1;
-      font-size: 15px;
-      margin-bottom: 16px;
-    }
+    h2 { font-size: 20px; font-weight: 700; color: #E2E8F0; margin-top: 32px; margin-bottom: 12px; }
+    p, ul { color: #CBD5E1; font-size: 15px; margin-bottom: 16px; }
     ul { padding-left: 24px; }
     li { margin-bottom: 8px; }
+    strong { color: #F1F5F9; }
+    code { background: rgba(255,255,255,0.06); padding: 1px 6px; border-radius: 6px; font-size: 13px; }
     .highlight-card {
-      background: rgba(79, 70, 229, 0.08);
-      border: 1px solid rgba(99, 102, 241, 0.3);
+      background: rgba(99, 102, 241, 0.08);
+      border: 1px solid rgba(165, 180, 252, 0.3);
       border-radius: 14px;
       padding: 20px;
       margin: 24px 0;
     }
-    .highlight-card h3 {
-      color: #A5B4FC;
-      font-size: 16px;
-      margin-bottom: 8px;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 20px 0;
-      font-size: 14px;
-    }
-    th, td {
-      border: 1px solid var(--border);
-      padding: 12px;
-      text-align: left;
-    }
-    th {
-      background: rgba(255,255,255,0.04);
-      color: #FFFFFF;
-    }
+    .highlight-card h3 { color: var(--accent); font-size: 16px; margin-bottom: 8px; }
+    .highlight-card p { margin-bottom: 0; }
+    .table-wrap { overflow-x: auto; margin: 20px 0; }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    th, td { border: 1px solid var(--border); padding: 12px; text-align: left; color: #CBD5E1; vertical-align: top; }
+    th { background: rgba(255,255,255,0.04); color: #FFFFFF; }
     footer {
       margin-top: 40px;
       padding-top: 20px;
@@ -115,55 +88,84 @@
       font-size: 13px;
       text-align: center;
     }
+    @media (max-width: 480px) {
+      body { padding: 16px 12px; }
+      .container { padding: 28px 18px; }
+      h1 { font-size: 26px; }
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <a href="/" class="back-nav">&larr; Back to all policies</a>
-    <span class="badge">100% Offline & Ad-Free</span>
+    <a href="./" class="back-nav">&larr; Back to all policies</a>
+    <span class="badge">Offline &bull; Ad-Free &bull; Encrypted</span>
     <h1>Privacy Policy</h1>
-    <div class="date">Effective Date: September 2026 &bull; Simple Notes (com.karthikeyan.simplenotes) &bull; Published by k-Tech Innovation</div>
+    <div class="date">Last updated: November 24, 2026 &bull; Simple Notes Offline (<code>com.simplenotesoffline.app</code>) &bull; Published by ktechinnovation</div>
 
     <div class="highlight-card">
-      <h3>Key Commitment to Your Privacy</h3>
-      <p>Simple Notes does <strong>NOT</strong> collect, upload, share, or sell any of your personal information. The app is completely <strong>Ad-Free</strong>, runs <strong>100% Offline</strong>, and stores all user data exclusively on your device.</p>
+      <h3>Your notes stay on your phone</h3>
+      <p>Simple Notes Offline does <strong>not</strong> collect, upload, share or sell any of your information. The app is <strong>ad-free</strong>, works <strong>fully offline</strong>, needs <strong>no account</strong>, and keeps your notes in an <strong>encrypted database</strong> on your device.</p>
     </div>
 
-    <h2>1. Summary & Core Principles</h2>
-    <p>Simple Notes is an offline, distraction-free markdown and rich note-taking app.</p>
+    <h2>1. Information the app stores (on your device only)</h2>
     <ul>
-      <li><strong>Zero Remote Data Collection:</strong> We do not operate user analytics or external logging servers.</li>
-      <li><strong>Local Processing:</strong> All application calculations and operations happen entirely within your local device CPU.</li>
-      <li><strong>No Account Required:</strong> You never need to submit an email address, password, or profile information to use Simple Notes.</li>
+      <li><strong>Notes:</strong> titles, text (including Markdown), checklists, tags, colours, pinned / favourite / archived / trash status, reminders and timestamps.</li>
+      <li><strong>Photos you attach:</strong> a copy of each photo you add to a note, kept in the app's private storage.</li>
+      <li><strong>Settings:</strong> App Lock, fingerprint unlock, hidden previews and screenshot blocking. Your App Lock PIN is kept in Android Keystore-backed secure storage, never in a readable file.</li>
+    </ul>
+    <p>The notes database is <strong>encrypted with AES-256</strong> (SQLCipher). Its key is generated on your device, kept in the Android Keystore, and never leaves the device. Android's automatic cloud backup is turned off for this app, so your notes are not copied to a cloud account.</p>
+
+    <h2>2. Information we do NOT collect</h2>
+    <ul>
+      <li>We do <strong>not</strong> collect notes, photos, search terms or any personal information.</li>
+      <li>We do <strong>not</strong> use analytics, tracking, crash reporting or advertising SDKs, and the app shows <strong>no ads</strong>.</li>
+      <li>We do <strong>not</strong> collect location, contacts or device identifiers. The advertising ID permission is removed from the app.</li>
+      <li>The app has <strong>no account and no cloud sync</strong>.</li>
+      <li>We do <strong>not</strong> sell or share data, because we never receive any.</li>
     </ul>
 
-    <h2>2. Information Handled Locally</h2>
-<p>Simple Notes stores all notes, categories, tags, and formatting in an isolated SQLite database on your device. Your notes never leave your phone.</p>
-<h2>3. Permissions Used</h2>
-<table>
-  <tr><th>Permission</th><th>Purpose</th></tr>
-  <tr><td>USE_BIOMETRIC</td><td>Protects locked notes with local biometric verification.</td></tr>
-</table>
+    <h2>3. App Lock, locked notes and fingerprint</h2>
+    <p>You can protect the app with a 4-digit PIN and lock individual notes. Locked notes are hidden in the notes list and search, and open only after your PIN or fingerprint. If you turn on fingerprint unlock, Android verifies your fingerprint; the app never receives or stores biometric data, only whether verification succeeded.</p>
 
-    <h2>Advertising & Tracking Declarations</h2>
-    <p>We strictly declare that Simple Notes contains:</p>
-    <ul>
-      <li><strong>NO Advertisements:</strong> Zero banner ads, video ads, or interstitial advertisements.</li>
-      <li><strong>NO Analytics SDKs:</strong> Zero tracking frameworks, third-party analytics libraries, or advertising identifiers.</li>
-      <li><strong>NO Data Monetization:</strong> We never harvest, aggregate, or sell your data.</li>
-    </ul>
+    <h2>4. Photos</h2>
+    <p>Photos are chosen with the Android system photo picker, so the app only sees the photos you pick. It does not request camera, storage or media-library permissions. A copy is kept in the app's private storage and deleted when you remove it from the note or delete the note permanently.</p>
 
-    <h2>Children's Privacy</h2>
-    <p>Simple Notes does not collect any personal information from any user, including children under the age of 13. The application is completely safe for audiences of all ages.</p>
+    <h2>5. Reminders</h2>
+    <p>Note reminders are scheduled locally on your device. No server is involved. After your phone restarts, the app re-schedules them on the device.</p>
 
-    <h2>Data Control & Deletion</h2>
-    <p>You maintain full control of your data at all times. Since data is stored strictly on your device, clearing application storage or uninstalling the app permanently deletes all associated data immediately.</p>
+    <h2>6. Internet use</h2>
+    <p>All features work fully offline. The app makes one optional network request: an <strong>update check</strong> that downloads a small public version file from GitHub Pages (or, if that fails, reads the app's public Google Play page) to tell you when a newer version is available. No notes or personal data are sent. If your device is offline, the check is simply skipped.</p>
 
-    <h2>Contact Information</h2>
-    <p>If you have any questions or feedback regarding this Privacy Policy, please contact k-Tech Innovation at <strong>karthik.devacc@gmail.com</strong>.</p>
+    <h2>7. Backups, exports and sharing</h2>
+    <p>Backups are created only when you choose <strong>Export Backup</strong>. The app opens the Android share sheet and you decide where the file goes. You can protect a backup with a password: the file is then encrypted with AES-256, and the password is never stored. A backup without a password can be read by anyone who has the file. Photos are not included in backups. <strong>Restore from Backup</strong> reads a file you pick and merges it into your notes. Sharing a single note sends its text only to the app you choose. We never receive any of these files.</p>
+
+    <h2>8. Data deletion</h2>
+    <p>You can delete notes, empty the trash, or remove tags within the app. Uninstalling the app, or clearing its storage in Android settings, permanently erases the encrypted database, its key and all attached photos from your device. Because we hold no copy, there is nothing for us to delete on our side.</p>
+
+    <h2>9. Children's privacy</h2>
+    <p>Simple Notes Offline does not collect personal information from anyone, including children under 13.</p>
+
+    <h2>10. Permissions</h2>
+    <div class="table-wrap">
+      <table>
+        <tr><th>Permission</th><th>Why</th></tr>
+        <tr><td>Biometrics (USE_BIOMETRIC, USE_FINGERPRINT)</td><td>Optional fingerprint unlock for the app and locked notes.</td></tr>
+        <tr><td>Notifications (POST_NOTIFICATIONS)</td><td>Showing the reminders you set on notes.</td></tr>
+        <tr><td>Run at startup (RECEIVE_BOOT_COMPLETED), WAKE_LOCK</td><td>Re-scheduling and delivering your reminders after the phone restarts.</td></tr>
+        <tr><td>Vibrate</td><td>Haptic feedback and reminder alerts.</td></tr>
+        <tr><td>Internet, network state</td><td>Only for the optional update check.</td></tr>
+      </table>
+    </div>
+    <p>The app does <strong>not</strong> request camera, microphone, contacts, location or storage permissions.</p>
+
+    <h2>11. Changes to this policy</h2>
+    <p>If we update this policy, the new version will be published at this same address with a new "Last updated" date.</p>
+
+    <h2>12. Contact</h2>
+    <p>Questions or feedback: <strong>ktechinnovationltd@gmail.com</strong></p>
 
     <footer>
-      &copy; 2026 k-Tech Innovation. All rights reserved. &bull; Fully compliant with Google Play Developer Program Policies.
+      &copy; 2026 ktechinnovation &bull; Simple Notes Offline &bull; Complies with Google Play Developer Program Policies.
     </footer>
   </div>
 </body>
