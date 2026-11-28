@@ -16,17 +16,17 @@
 
 Welcome to **Workout Tracker** ("we", "our", or "us"), developed and published by **k-Tech Innovation**. We take your personal privacy seriously. This Privacy Policy explains our practices regarding user data, device permissions, and security for the **Workout Tracker** mobile application for Android (`com.ironlogtracker.app`).
 
-Workout Tracker is engineered from the ground up as a **100% offline, privacy-first, ad-free fitness utility**. We do not operate user accounts, we do not sync your personal workout logs to remote cloud databases, and we never collect, track, monetize, or transmit your personal information.
+Workout Tracker is a privacy-first fitness app that works offline. We do not operate user accounts, we do not sync your workout logs to any cloud database, and your workouts, body measurements and profile never leave your device. The app does not currently show ads. It includes Google's AdMob advertising SDK so that ads can be added in a future update; Section 5 explains what Google would collect if ads are shown.
 
 ---
 
-## 2. Summary: Core Privacy Guarantees
+## 2. Summary
 
-* 🛡️ **Zero Remote Data Collection:** We do not collect, transmit, store, sell, or share any personal, biological, fitness, or device data.
-* 📶 **100% Offline Storage:** All workout routines, custom exercises, sets, weights, repetitions, and personal records (PRs) reside strictly in an isolated local storage space on your device.
-* 🚫 **100% Ad-Free:** Workout Tracker contains no third-party advertisements, banner ads, interstitial videos, or sponsored trackers.
-* 🔒 **No Account Required:** You can use all capabilities of Workout Tracker immediately upon install without providing your name, email address, phone number, or social media logins.
-* 📊 **Zero Analytics & Tracking SDKs:** We do not integrate third-party telemetry, behavior tracking, or crash analytics frameworks (no Google Analytics, Firebase, Mixpanel, or Facebook SDK).
+* 🛡️ **Your workout data stays on your device:** We (k-Tech Innovation) do not collect, receive, sell, or share your workouts, personal records, profile, or body weight.
+* 📶 **Works offline:** All workout routines, custom exercises, sets, weights, repetitions, and personal records (PRs) are stored in the app's private storage on your device. Logging workouts never needs an internet connection.
+* 📢 **Advertising:** The app does not currently show ads. It includes the Google Mobile Ads SDK (AdMob) for possible future use; if ads are shown, Google may collect your device's advertising ID and other device and usage information, as described in Section 5.
+* 🔒 **No Account Required:** You can use every feature of Workout Tracker without providing your name, email address, phone number, or social media logins.
+* 📊 **No analytics SDKs from us:** We do not add analytics or crash-reporting frameworks (no Google Analytics for Firebase, Mixpanel, or Facebook SDK).
 
 ---
 
@@ -58,32 +58,45 @@ Workout Tracker requests only minimal permissions strictly required to execute u
 | **System Clipboard & Sharing** | Android OS Share Sheet Intent | Used solely when you tap "Share with AI" or "Copy Workout Summary" to send your workout text to clipboard or external note apps. This is 100% user-directed; no automated background transmissions occur. |
 | **Local File Access** *(Optional)* | Scoped Storage / Storage Access Framework | Used strictly if you manually trigger an export or import of a local workout backup file. |
 
+| **INTERNET** | `android.permission.INTERNET` | Reserved for the Google Mobile Ads SDK to request ads if ads are added in a future update. Your workout data is never sent over the network. |
+| **Advertising ID** | `com.google.android.gms.permission.AD_ID` | Lets the Google Mobile Ads SDK read your device's advertising ID for ads (see Section 5). You can reset or delete this ID in your device settings. |
+
 Workout Tracker does **NOT** request access to sensitive permissions such as location (`ACCESS_FINE_LOCATION`), camera, microphone, contacts, biometric credentials, or phone state.
 
 ---
 
-## 5. Third-Party Services & Advertising Disclosures
+## 5. Advertising (Google AdMob)
 
-In accordance with Google Play Developer Program Policies:
+Workout Tracker includes the **Google Mobile Ads SDK (AdMob)**, provided by Google LLC. **The app does not currently request or show ads.** If ads are added in a future update, we will update this policy and the app's Google Play listing first. When the app requests an ad, the SDK may collect and send to Google:
 
-* **Advertising:** Workout Tracker is **100% Ad-Free**. We do not include advertising identifiers (such as Google Advertising ID / AAID) or ad mediation networks.
-* **Analytics & Telemetry:** Workout Tracker does not use remote tracking SDKs.
-* **Data Brokers:** We do not partner with, sell data to, or exchange data with any advertising networks, data brokers, or research firms.
+* **Device identifiers:** the Android advertising ID and the app set ID.
+* **Approximate location:** derived from your IP address.
+* **Usage and diagnostic information:** such as ad views and taps, app launches, device model, operating system version, and SDK performance and crash data.
+
+Google uses this information to deliver, measure, and personalize ads and to prevent fraud. It is handled under [Google's Privacy Policy](https://policies.google.com/privacy) and [how Google uses information from apps that use its services](https://policies.google.com/technologies/partner-sites).
+
+Your choices:
+
+* You can reset your advertising ID, or delete it to opt out of personalized ads, in your device settings (*Settings > Privacy > Ads*, or *Settings > Google > Ads* on some devices).
+* Your workouts, personal records, profile, and body weight are **never** shared with Google or any ad network.
+
+We do not sell your data, and we do not use any analytics or data-broker services.
 
 ---
 
 ## 6. Google Play Data Safety Section Declarations
 
-For transparency with Google Play Store reviewers and users, Workout Tracker declares the following in the Google Play Console **Data safety** questionnaire:
+Workout Tracker declares the following in the Google Play Console **Data safety** form:
 
-* **Does your app collect or share any of the required user data types?**  
-  👉 **No.** (Workout Tracker does not collect or transmit user data to external servers).
+* **Data collected and shared:** Device or other IDs (advertising ID), declared because the Google Mobile Ads SDK and the advertising ID permission are included in the app. Workout data is never collected.
 * **Is all of the user data collected by your app encrypted in transit?**  
-  👉 **Not applicable** (No data is transmitted over the internet).
+  👉 **Yes.** The Google Mobile Ads SDK uses encrypted (HTTPS) connections.
+* **Does your app use the advertising ID?**  
+  👉 **Yes**, through the Google Mobile Ads SDK, for advertising.
 * **Does your app provide a way for users to request that their data be deleted?**  
-  👉 **Yes.** All user data is under direct user control on their device and can be erased at any time.
-* **Is your app ad-supported?**  
-  👉 **No.**
+  👉 **Yes.** All workout data is stored only on the device and can be erased at any time (see Section 7). The advertising ID can be reset or deleted in device settings.
+* **Does your app contain ads?**  
+  👉 **No**, not at present. This will be changed to **Yes** before any ads are shown.
 
 ---
 
@@ -100,13 +113,13 @@ Because all workout information is stored exclusively on your device, **you have
 
 ## 8. Children's Privacy (COPPA & GDPR-K Compliance)
 
-Workout Tracker does not knowingly collect, store, or solicit personal information from children under the age of 13 (or under the age of 16 in the European Union). Because Workout Tracker collects zero personal data from any user regardless of age, the application is safe for general audiences of all ages and complies fully with the Children's Online Privacy Protection Act (COPPA) and European General Data Protection Regulation (GDPR).
+Workout Tracker is not directed at children under the age of 13 (or under the age of 16 in the European Union), and we do not knowingly collect personal information from them. Workout data entered in the app never leaves the device, whatever the user's age.
 
 ---
 
 ## 9. Security
 
-We protect your workout records by avoiding external server transmission entirely. Your data remains stored in an isolated, sandboxed application directory protected by standard Android operating system security boundaries and file-system encryption.
+Your workout records are never sent to any server. They stay in the app's sandboxed storage on your device, protected by Android's operating system security boundaries and file-system encryption.
 
 ---
 
