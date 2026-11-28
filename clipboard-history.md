@@ -1,10 +1,10 @@
-# Privacy Policy for ClipNest
+# Privacy Policy for Clipboard History
 
-**Effective Date: November 20, 2026** · ClipNest (`com.clipboardnest.app`) · Published by k-Tech Innovation
+**Effective Date: November 20, 2026** · Clipboard History (`com.clipboardnest.app`) · Published by k-Tech Innovation
 
-Live copy: https://karthic-keyan.github.io/privacy-policy/clipnest.html (source: `privacy-policy.html` in this folder; keep both in sync)
+Live copy: https://karthic-keyan.github.io/privacy-policy/clipboard-history.html (source: `privacy-policy.html` in this folder; keep both in sync)
 
-> ClipNest does **not** collect, upload, share, or sell any personal information. Your clipboard history is stored **only on your device**. No account, no cloud sync, no ads, no analytics.
+> Clipboard History does **not** collect, upload, share, or sell any personal information. Your clipboard history is stored **only on your device**. No account, no cloud sync, no ads, no analytics.
 
 ## 1. Information stored on your device
 
@@ -22,7 +22,7 @@ All of this stays in the App's private storage and is never sent to us or anyone
 
 ## 3. Clipboard access
 
-Android lets only the app on screen read the clipboard. ClipNest reads it **only while it is open on your screen**, never in the background. On Android 13+ the system may show a notice when this happens. Clipboard contents can be sensitive, so you can turn off auto-save, enable "Skip one-time codes", and delete any clip or your whole history at any time.
+Android lets only the app on screen read the clipboard. Clipboard History reads it **only while it is open on your screen**, never in the background. On Android 13+ the system may show a notice when this happens. Clipboard contents can be sensitive, so you can turn off auto-save, enable "Skip one-time codes", and delete any clip or your whole history at any time.
 
 ## 4. Internet use
 
@@ -56,7 +56,7 @@ Clips live in the App's private storage, which other apps can't read. Exported b
 
 ## 9. Children's privacy
 
-ClipNest collects no personal information from anyone, including children under 13.
+Clipboard History collects no personal information from anyone, including children under 13.
 
 ## 10. Changes
 
